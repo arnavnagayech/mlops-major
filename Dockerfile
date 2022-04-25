@@ -1,4 +1,4 @@
-FROM centos
+FROM ubuntu
 
 RUN yum install python36 -y
 
