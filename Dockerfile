@@ -1,6 +1,6 @@
 FROM centos
 
-RUN pip install python37 -y
+RUN yum install python36 -y
 
 RUN pip install numpy
 
