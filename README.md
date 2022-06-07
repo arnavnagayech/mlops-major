@@ -1,3 +1,3 @@
 # mlops-major
 
-Major Pr
+Major Project
