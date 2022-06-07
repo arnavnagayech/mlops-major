@@ -13,3 +13,5 @@ COPY marks.pk1 /
 COPY markscode.py  /
 
 CMD python3 markscode.py
+
+ENV CI=true
