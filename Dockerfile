@@ -1,4 +1,4 @@
-FROM centos
+FROM redhat/ubi8
 
 RUN yum install python36 -y
 
@@ -10,6 +10,6 @@ RUN pip3 install scikit-learn
 
 COPY marks.pk1 /
 
-COPY markscode.p  /
+COPY markscode.py  /
 
 CMD python3 markscode.py
