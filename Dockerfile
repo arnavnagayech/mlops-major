@@ -1,4 +1,4 @@
-FROM redhat/ubi8
+FROM centos
 
 RUN yum install python36 -y
 
