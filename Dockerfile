@@ -1,6 +1,7 @@
 FROM  ubuntu
+RUN sudo apt-get update -y
 
-RUN yum install python37 -y
+RUN sudo apt-get install -y python
 
 RUN pip3 install joblib
 
