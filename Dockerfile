@@ -1,6 +1,6 @@
 FROM python
 
-RUN python3 -m pip install joblib-1.1.0
+RUN pip install --proxy="proxy:portno" joblib-1.1.0
 
 COPY marks.pk1 /
 
