@@ -1,6 +1,8 @@
-FROM python
+FROM fedora
 
-RUN pip install --proxy="proxy:portno" joblib-1.1.0
+RUN yum install python37 -y
+
+RUN pip3 install joblib
 
 COPY marks.pk1 /
 
