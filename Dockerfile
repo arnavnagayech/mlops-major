@@ -1,17 +1,15 @@
-FROM  ubuntu
+FROM redhat/ubi8
 
-RUN apt-get update
-RUN  apt-get upgrade
-RUN apt-get install software-properties-common
-RUN  add-apt-repository ppa:deadsnakes/ppa
-RUN  apt-get update
-RUN apt-get install python3.6
+RUN yum install python36 -y
+
+RUN pip3 install numpy
 
 RUN pip3 install joblib
+
+RUN pip3 install scikit-learn
 
 COPY marks.pk1 /
 
 COPY markscode.py  /
 
 CMD python3 markscode.py
-
