@@ -1,7 +1,6 @@
 FROM  ubuntu
-RUN  apt-get update -y
 
-RUN apt-get install -y python
+RUN apt-get install -y python36
 
 RUN pip3 install joblib
 
