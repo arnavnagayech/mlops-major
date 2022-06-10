@@ -1,4 +1,4 @@
-FROM  registry.access.redhat.com/ubi8:8.2
+FROM  ubuntu
 
 RUN yum install python37 -y
 
