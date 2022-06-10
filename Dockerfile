@@ -1,6 +1,6 @@
 FROM python
 
-RUN pip3 install joblib
+RUN python3 -m pip install joblib
 
 COPY marks.pk1 /
 
